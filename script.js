@@ -51,7 +51,7 @@ songItems.forEach((element)=>{
         audioElement.currentTime=0;
         index= parseInt(e.target.id);
         audioElement.pause();
-        audioElement.src= `song${index}.mp3`;
+        audioElement.src= `songs/song${index}.mp3`;
         audioElement.play();
         gif.style.visibility= "visible";
         masterplay.classList.remove("fa-play");
@@ -84,7 +84,7 @@ function handleIndex_fwd(index) {
                 
                 audioElement.pause();
                 audioElement.currentTime=0;
-               audioElement.src= `song${index+1}.mp3`;
+               audioElement.src= `songs/song${index+1}.mp3`;
                audioElement.load();
                audioElement.play();
                 gif.style.visibility= "visible";
@@ -105,7 +105,7 @@ function handleIndex_bwd(index) {
                
                audioElement.pause();
                audioElement.currentTime=0;
-               audioElement.src= `song10.mp3`;
+               audioElement.src= `songs/song10.mp3`;
                audioElement.load();
                audioElement.play();
                gif.style.visibility= "visible";
@@ -119,7 +119,7 @@ function handleIndex_bwd(index) {
                 
                 audioElement.pause();
                 audioElement.currentTime=0;
-                audioElement.src= `song${index-1}.mp3`;
+                audioElement.src= `songs/song${index-1}.mp3`;
                 audioElement.load();
                 audioElement.play();
                 gif.style.visibility= "visible";
